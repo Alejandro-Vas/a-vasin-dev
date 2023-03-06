@@ -1,14 +1,17 @@
 import Image from 'next/image';
-import styles from '../styles/page.module.css';
+import Technologies from '@components/Technologies';
+import styles from './page.module.css';
 import cat from '../../public/cat.jpg';
 
 function App() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <div>
         <h1>
           WELCOME
         </h1>
+
+        <Technologies />
         <div>
           <a
             href="/"
