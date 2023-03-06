@@ -1,11 +1,12 @@
 .background {
     background-color: grey;
+    border-radius: 16px;
 }
 .technologyItem {
-    padding: 10px;
+    padding: 8px;
 
     &:hover {
-        background-color: green;
+        background-color: blue;
         cursor: pointer;
         transition: 0.3s;
     }
