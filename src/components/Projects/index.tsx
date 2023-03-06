@@ -1,7 +1,10 @@
+import { ANCHORS } from '@constants/index';
+
 function Projects() {
   return (
     <div>
-      <h2>
+      <span id={ANCHORS.PROJECTS} />
+      <h2 className="textAlignCenter">
         PROJECTS
       </h2>
 

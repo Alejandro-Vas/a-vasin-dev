@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { ANCHORS } from '@constants/index';
 import technologiesList from './technologiesList';
-
 import styles from './styles.module.scss';
 
 const initState = technologiesList[4];
@@ -20,7 +20,8 @@ function Technologies() {
 
   return (
     <div>
-      <h2>
+      <span id={ANCHORS.TECHNOLOGIES} />
+      <h2 className="textAlignCenter">
         TECHNOLOGIES
       </h2>
       <div className={styles.background}>
@@ -49,9 +50,7 @@ function Technologies() {
         </div>
 
         <div className={styles.description}>
-          <div>
-            {active.description}
-          </div>
+          {active.description}
         </div>
 
       </div>
