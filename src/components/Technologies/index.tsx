@@ -22,8 +22,8 @@ function Technologies() {
           return (
             <Image
               src={icon}
-              width="80"
-              height="80"
+              width="60"
+              height="60"
               alt={label}
               key={label}
               className={`${styles.technologyItem} ${selectedClassName}`}

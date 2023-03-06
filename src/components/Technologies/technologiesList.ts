@@ -15,7 +15,6 @@ import nodeJs from '@assets/icons/nodeJs.svg';
 import npm from '@assets/icons/npm.svg';
 import react from '@assets/icons/react.svg';
 import redux from '@assets/icons/redux.svg';
-import stylus from '@assets/icons/stylus.svg';
 import tailwindCss from '@assets/icons/tailwindCss.svg';
 import typescript from '@assets/icons/typescript.svg';
 import vscode from '@assets/icons/vscode.svg';
@@ -23,14 +22,8 @@ import vueJs from '@assets/icons/vueJs.svg';
 
 const technologyList = [
   {
-    label: 'ArgoCD',
-    icon: argoCd,
-    description: 'Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.',
-  },
-  {
-    label: 'Bootstrap',
-    icon: bootstrap,
-    description: 'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins',
+    label: 'HTML5',
+    icon: html5,
   },
   {
     label: 'CSS',
@@ -38,41 +31,24 @@ const technologyList = [
     description: 'CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts',
   },
   {
-    label: 'Docker',
-    icon: docker,
-    description: 'Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly',
-  },
-  {
-    label: 'Express',
-    icon: express,
-  },
-  {
-    label: 'Git',
-    icon: git,
-  },
-  {
-    label: 'Gitlab',
-    icon: gitlab,
-  },
-  {
-    label: 'HTML5',
-    icon: html5,
-  },
-  {
     label: 'JavaScript',
     icon: javascript,
   },
   {
-    label: 'Jest',
-    icon: jest,
+    label: 'TypeScript',
+    icon: typescript,
   },
   {
-    label: 'Kubernetes',
-    icon: kubernetes,
+    label: 'React',
+    icon: react,
   },
   {
-    label: 'Material UI',
-    icon: materialUI,
+    label: 'Vue.js',
+    icon: vueJs,
+  },
+  {
+    label: 'Redux',
+    icon: redux,
   },
   {
     label: 'Next.js',
@@ -83,36 +59,56 @@ const technologyList = [
     icon: nodeJs,
   },
   {
+    label: 'Express',
+    icon: express,
+  },
+  {
     label: 'NPM',
     icon: npm,
   },
   {
-    label: 'React',
-    icon: react,
-  },
-  {
-    label: 'Redux',
-    icon: redux,
-  },
-  {
-    label: 'Stylus',
-    icon: stylus,
+    label: 'Material UI',
+    icon: materialUI,
   },
   {
     label: 'TailwindCSS',
     icon: tailwindCss,
   },
   {
-    label: 'TypeScript',
-    icon: typescript,
+    label: 'Bootstrap',
+    icon: bootstrap,
+    description: 'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins',
+  },
+
+  {
+    label: 'Docker',
+    icon: docker,
+    description: 'Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly',
+  },
+  {
+    label: 'Git',
+    icon: git,
+  },
+  {
+    label: 'Gitlab',
+    icon: gitlab,
+  },
+  {
+    label: 'Jest',
+    icon: jest,
+  },
+  {
+    label: 'Kubernetes',
+    icon: kubernetes,
+  },
+  {
+    label: 'ArgoCD',
+    icon: argoCd,
+    description: 'Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.',
   },
   {
     label: 'VsCode',
     icon: vscode,
-  },
-  {
-    label: 'Vue.js',
-    icon: vueJs,
   },
 ];
 
