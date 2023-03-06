@@ -4,10 +4,15 @@ import Image from 'next/image';
 import { useState } from 'react';
 import technologiesList from './technologiesList';
 
-import styles from './page.module.scss';
+import styles from './styles.module.scss';
+
+const initState = technologiesList[4];
 
 function Technologies() {
-  const [active, setActive] = useState({ label: 'Technology list', description: '' });
+  const [active, setActive] = useState({
+    label: initState.label,
+    description: initState.description,
+  });
 
   const onSelect = (selected: { label :string, description: string }) => {
     setActive(selected);

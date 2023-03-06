@@ -7,11 +7,11 @@
 .technologyList {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
 .technologyItem {
     padding: 8px;
-
     &:hover {
         background-color: royalblue;
         cursor: pointer;
@@ -21,4 +21,8 @@
 
 .selected {
     background-color: green;
+}
+
+.label {
+    margin-bottom: 8px;
 }

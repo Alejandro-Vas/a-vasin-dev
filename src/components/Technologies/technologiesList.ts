@@ -24,6 +24,7 @@ const technologyList = [
   {
     label: 'HTML5',
     icon: html5,
+    description: 'HTML5 is a markup language used for structuring and presenting content on the World Wide Web',
   },
   {
     label: 'CSS',
@@ -33,30 +34,37 @@ const technologyList = [
   {
     label: 'JavaScript',
     icon: javascript,
+    description: 'JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard',
   },
   {
     label: 'TypeScript',
     icon: typescript,
+    description: 'TypeScript (TS) is a strictly-typed variant of JavaScript. TS differs by introducing type annotations to variables and functions',
   },
   {
     label: 'React',
     icon: react,
+    description: 'React is JavaScript library for building user interfaces based on components.',
   },
   {
     label: 'Vue.js',
     icon: vueJs,
+    description: 'Vue is a progressive JavaScript Framework web user interfaces.',
   },
   {
     label: 'Redux',
     icon: redux,
+    description: 'A Predictable State Container for JS Apps and toolset for efficient Redux development',
   },
   {
     label: 'Next.js',
     icon: nextJs,
+    description: 'The React Framework to create full-stack web applications by extending the latest React features',
   },
   {
     label: 'Node.js',
     icon: nodeJs,
+    description: 'An open-source, cross-platform JavaScript runtime environment',
   },
   {
     label: 'Express',
@@ -79,7 +87,6 @@ const technologyList = [
     icon: bootstrap,
     description: 'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins',
   },
-
   {
     label: 'Docker',
     icon: docker,
