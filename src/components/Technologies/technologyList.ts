@@ -25,18 +25,22 @@ const technologyList = [
   {
     label: 'ArgoCD',
     icon: argoCd,
+    description: 'Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.',
   },
   {
     label: 'Bootstrap',
     icon: bootstrap,
+    description: 'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins',
   },
   {
     label: 'CSS',
     icon: css3,
+    description: 'CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts',
   },
   {
     label: 'Docker',
     icon: docker,
+    description: 'Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly',
   },
   {
     label: 'Express',

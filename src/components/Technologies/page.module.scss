@@ -2,6 +2,12 @@
     background-color: grey;
     border-radius: 16px;
 }
+
+.technologyList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .technologyItem {
     padding: 8px;
 
