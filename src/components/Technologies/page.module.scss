@@ -12,8 +12,12 @@
     padding: 8px;
 
     &:hover {
-        background-color: blue;
+        background-color: royalblue;
         cursor: pointer;
         transition: 0.3s;
     }
+}
+
+.selected {
+    background-color: green;
 }

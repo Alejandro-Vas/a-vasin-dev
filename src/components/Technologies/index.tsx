@@ -2,44 +2,46 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import technologyList from './technologyList';
+import technologiesList from './technologiesList';
 
 import styles from './page.module.scss';
 
 function Technologies() {
-  const [activeLabel, setActiveLabel] = useState('Technology list');
-  const [avtiveDescription, setActiveDescription] = useState('Select technology above to explore');
+  const [active, setActive] = useState({ label: 'Technology list', description: '' });
 
-  const onSelect = ({ label, description }: { label :string, description: string }) => {
-    setActiveLabel(label);
-    setActiveDescription(description);
+  const onSelect = (selected: { label :string, description: string }) => {
+    setActive(selected);
   };
 
   return (
     <div className={styles.background}>
       <div className={styles.technologyList}>
-        {technologyList.map(({ label, icon, description = 'No description' }) => (
-          <Image
-            src={icon}
-            width="80"
-            height="80"
-            alt={label}
-            key={label}
-            className={styles.technologyItem}
-            onClick={() => onSelect({ label, description })}
-          />
-        ))}
+        {technologiesList.map(({ label, icon, description = 'No description' }) => {
+          const isActiveSelected = active.label === label;
+          const selectedClassName = isActiveSelected ? styles.selected : '';
+          return (
+            <Image
+              src={icon}
+              width="80"
+              height="80"
+              alt={label}
+              key={label}
+              className={`${styles.technologyItem} ${selectedClassName}`}
+              onClick={() => onSelect({ label, description })}
+            />
+          );
+        })}
       </div>
 
       <div className={styles.label}>
         <h2>
-          {activeLabel}
+          {active.label}
         </h2>
       </div>
 
       <div className={styles.description}>
         <h3>
-          {avtiveDescription}
+          {active.description}
         </h3>
       </div>
 
