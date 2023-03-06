@@ -1,7 +1,8 @@
-import '../styles/globals.css';
+import '@styles/globals.scss';
 import { ReactNode } from 'react';
 import Footer from '@components/Footer';
 import Header from '@components/Header';
+import styles from './page.module.scss';
 
 export const metadata = {
   title: 'Aleksandr Vasin\'s portfolio',
@@ -17,8 +18,9 @@ function Layout({ children }: ILayoutProps) {
     <html lang="en">
       <body>
         <Header />
-
-        {children}
+        <div className={styles.container}>
+          {children}
+        </div>
 
         <Footer />
       </body>
