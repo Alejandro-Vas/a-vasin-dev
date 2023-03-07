@@ -29,8 +29,14 @@ button {
   cursor: pointer
 }
 
+.paper {
+  background-color: #404040;
+  border-radius: 16px;
+  padding: 16px;
+}
+
 .container {
-  max-width: 1240px;
+  max-width: 1024px;
   margin: auto;
   padding: 16px;
 }

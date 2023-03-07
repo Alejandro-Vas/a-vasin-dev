@@ -23,7 +23,7 @@ function Technologies() {
       <h2 className="textAlignCenter">
         TECHNOLOGIES
       </h2>
-      <div className={styles.background}>
+      <div className="paper">
         <div className={styles.technologyList}>
           {technologiesList.map(({ label, Icon, description = 'No description' }) => {
             const isActiveSelected = active.label === label;
