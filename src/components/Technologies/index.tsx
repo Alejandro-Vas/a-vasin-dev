@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
 import { ANCHORS } from '@constants/index';
 import technologiesList from './technologiesList';
@@ -26,19 +25,20 @@ function Technologies() {
       </h2>
       <div className={styles.background}>
         <div className={styles.technologyList}>
-          {technologiesList.map(({ label, icon, description = 'No description' }) => {
+          {technologiesList.map(({ label, Icon, description = 'No description' }) => {
             const isActiveSelected = active.label === label;
             const selectedClassName = isActiveSelected ? styles.selected : '';
             return (
-              <Image
-                src={icon}
-                width="60"
-                height="60"
-                alt={label}
+              <div
                 key={label}
                 className={`${styles.technologyItem} ${selectedClassName}`}
                 onClick={() => onSelect({ label, description })}
-              />
+                tabIndex={-1}
+                role="button"
+                onKeyDown={() => null}
+              >
+                <Icon />
+              </div>
             );
           })}
         </div>

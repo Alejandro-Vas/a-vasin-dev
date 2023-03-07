@@ -23,99 +23,99 @@ import vueJs from '@assets/icons/vueJs.svg';
 const technologyList = [
   {
     label: 'HTML5',
-    icon: html5,
+    Icon: html5,
     description: 'HTML5 is a markup language used for structuring and presenting content on the World Wide Web',
   },
   {
     label: 'CSS',
-    icon: css3,
+    Icon: css3,
     description: 'CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts',
   },
   {
     label: 'JavaScript',
-    icon: javascript,
+    Icon: javascript,
     description: 'JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard',
   },
   {
     label: 'TypeScript',
-    icon: typescript,
+    Icon: typescript,
     description: 'TypeScript (TS) is a strictly-typed variant of JavaScript. TS differs by introducing type annotations to variables and functions',
   },
   {
     label: 'React',
-    icon: react,
+    Icon: react,
     description: 'React is JavaScript library for building user interfaces based on components.',
   },
   {
     label: 'Vue.js',
-    icon: vueJs,
+    Icon: vueJs,
     description: 'Vue is a progressive JavaScript Framework web user interfaces.',
   },
   {
     label: 'Redux',
-    icon: redux,
+    Icon: redux,
     description: 'A Predictable State Container for JS Apps and toolset for efficient Redux development',
   },
   {
     label: 'Next.js',
-    icon: nextJs,
+    Icon: nextJs,
     description: 'The React Framework to create full-stack web applications by extending the latest React features',
   },
   {
     label: 'Node.js',
-    icon: nodeJs,
+    Icon: nodeJs,
     description: 'An open-source, cross-platform JavaScript runtime environment',
   },
   {
     label: 'Express',
-    icon: express,
+    Icon: express,
   },
   {
     label: 'NPM',
-    icon: npm,
+    Icon: npm,
   },
   {
     label: 'Material UI',
-    icon: materialUI,
+    Icon: materialUI,
   },
   {
     label: 'TailwindCSS',
-    icon: tailwindCss,
+    Icon: tailwindCss,
   },
   {
     label: 'Bootstrap',
-    icon: bootstrap,
+    Icon: bootstrap,
     description: 'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins',
   },
   {
     label: 'Docker',
-    icon: docker,
+    Icon: docker,
     description: 'Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly',
   },
   {
     label: 'Git',
-    icon: git,
+    Icon: git,
   },
   {
     label: 'Gitlab',
-    icon: gitlab,
+    Icon: gitlab,
   },
   {
     label: 'Jest',
-    icon: jest,
+    Icon: jest,
   },
   {
     label: 'Kubernetes',
-    icon: kubernetes,
+    Icon: kubernetes,
   },
   {
     label: 'ArgoCD',
-    icon: argoCd,
+    Icon: argoCd,
     description: 'Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.',
   },
   {
     label: 'VsCode',
-    icon: vscode,
+    Icon: vscode,
   },
 ];
 
