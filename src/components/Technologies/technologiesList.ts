@@ -1,4 +1,4 @@
-import argoCd from '@assets/icons/argoCd.svg';
+import argoCd from '@assets/icons/argocd.svg';
 import bootstrap from '@assets/icons/bootstrap.svg';
 import css3 from '@assets/icons/css3.svg';
 import docker from '@assets/icons/docker.svg';
@@ -9,16 +9,16 @@ import html5 from '@assets/icons/html5.svg';
 import javascript from '@assets/icons/javascript.svg';
 import jest from '@assets/icons/jest.svg';
 import kubernetes from '@assets/icons/kubernetes.svg';
-import materialUI from '@assets/icons/materialUI.svg';
-import nextJs from '@assets/icons/nextJs.svg';
-import nodeJs from '@assets/icons/nodeJs.svg';
+import materialUI from '@assets/icons/materialui.svg';
+import nextJs from '@assets/icons/nextjs.svg';
+import nodeJs from '@assets/icons/nodejs.svg';
 import npm from '@assets/icons/npm.svg';
 import react from '@assets/icons/react.svg';
 import redux from '@assets/icons/redux.svg';
-import tailwindCSS from '@assets/icons/tailwindCSS.svg';
+import tailwindCSS from '@assets/icons/tailwindcss.svg';
 import typescript from '@assets/icons/typescript.svg';
 import vscode from '@assets/icons/vscode.svg';
-import vueJs from '@assets/icons/vueJs.svg';
+import vueJs from '@assets/icons/vuejs.svg';
 
 const technologyList = [
   {
