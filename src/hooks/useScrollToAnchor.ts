@@ -6,6 +6,7 @@ const useScrollToAnchor = () => {
   const scrolledRef = useRef(false);
   const hash = window && window.location.hash;
   const hashRef = useRef(hash);
+  console.log(scrolledRef.current);
 
   useEffect(() => {
     if (hash && hashRef.current !== hash) {

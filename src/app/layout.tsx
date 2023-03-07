@@ -18,9 +18,7 @@ function Layout({ children }: ILayoutProps) {
       <body>
         <Header />
 
-        <div>
-          {children}
-        </div>
+        {children}
 
         <Footer />
       </body>
