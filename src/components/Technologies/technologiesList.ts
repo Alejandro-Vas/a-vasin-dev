@@ -15,7 +15,7 @@ import nodeJs from '@assets/icons/nodeJs.svg';
 import npm from '@assets/icons/npm.svg';
 import react from '@assets/icons/react.svg';
 import redux from '@assets/icons/redux.svg';
-import tailwindCss from '@assets/icons/tailwindCss.svg';
+import tailwindCSS from '@assets/icons/tailwindCSS.svg';
 import typescript from '@assets/icons/typescript.svg';
 import vscode from '@assets/icons/vscode.svg';
 import vueJs from '@assets/icons/vueJs.svg';
@@ -80,7 +80,7 @@ const technologyList = [
   },
   {
     label: 'TailwindCSS',
-    Icon: tailwindCss,
+    Icon: tailwindCSS,
   },
   {
     label: 'Bootstrap',
