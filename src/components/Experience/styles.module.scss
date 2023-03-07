@@ -1,0 +1,36 @@
+.employersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.employer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.leftBlock {
+    width: 200px;
+    & > div {
+        margin-bottom: 8px 
+     }
+}
+
+.rightBlock {
+    width: fit-content;
+    min-width: 500px;
+    height: 100%;
+
+    @media (width <= 600px) {
+        min-width: auto
+      }
+}
+
+.responsibilityList {
+    border-left: solid 1px #eee;
+    padding: 8px;
+    height: 100%;
+}
