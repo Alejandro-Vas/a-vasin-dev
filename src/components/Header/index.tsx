@@ -1,13 +1,16 @@
 'use client';
 
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { Y_OFFSET, MENU_ITEMS } from '@constants/index';
 import styles from './styles.module.scss';
 
 function Header() {
-  const router = useRouter();
-  const handleClick = () => {
-    router.push('/#PROJECTS');
+  const scrollSmoothTo = (elementId:string) => {
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset + Y_OFFSET;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -16,15 +19,19 @@ function Header() {
         Header!
         <div>
           <div className={styles.navContainer}>
-            <li>
-              <Link href="/#">Technologies</Link>
-            </li>
-            <li>
-              <Link href="/">Experience</Link>
-            </li>
-            <a onClick={handleClick}>
-              Projects
-            </a>
+            {MENU_ITEMS.map(({ label, anchor }) => (
+              <div
+                role="button"
+                onClick={() => scrollSmoothTo(anchor)}
+                key={label}
+                tabIndex={-1}
+                // TODO add keyboard listener on enter
+                onKeyDown={() => null}
+              >
+                {label}
+              </div>
+            ))}
+
           </div>
         </div>
       </header>
