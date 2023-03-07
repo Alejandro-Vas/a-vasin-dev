@@ -1,0 +1,24 @@
+
+.container {
+    position: sticky;
+    top: 0;
+    z-Index: 100;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px 0 16px;
+    background-color: #212529;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding: 16px 0 16px 0
+}
+
+.navContainer {
+    display: flex;
+    gap: 24px;
+}

@@ -1,46 +1,28 @@
-import Image from 'next/image';
+'use client';
+
+// import useScrollToAnchor from '@hooks/useScrollToAnchor';
+import About from '@components/About';
+import Experience from '@components/Experience';
+import Projects from '@components/Projects';
 import Technologies from '@components/Technologies';
-import styles from './page.module.css';
-import cat from '../../public/cat.jpg';
+
+import styles from './styles.module.scss';
 
 function App() {
+  // useScrollToAnchor();
+
   return (
-    <main className={styles.main}>
-      <div>
-        <h1>
-          WELCOME
-        </h1>
+    <main className="container">
+      <div className={styles.contentWrapper}>
+        <About />
 
         <Technologies />
-        <div>
-          <a
-            href="/"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={cat}
-              alt="CAT"
-              width={600}
-              height={400}
-              placeholder="blur"
-            />
-          </a>
-        </div>
+
+        <Experience />
+
+        <Projects />
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
     </main>
   );
 }

@@ -1,0 +1,36 @@
+.background {
+    background-color: grey;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.technologyList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.technologyItem {
+    padding: 8px;
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-color: royalblue;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+}
+
+.selected {
+    border: 3px solid black;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.label {
+    margin-bottom: 8px;
+}
+
+.description {
+    min-height: 48px;
+}
