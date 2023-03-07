@@ -6,6 +6,14 @@
     "plugin:react-hooks/recommended",
     "plugin:react/recommended"
   ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react",
+    "jsx-a11y",
+    "import",
+    "react-hooks"
+  ],
   "rules": {
     "no-shadow": "off",
     "import/extensions": [

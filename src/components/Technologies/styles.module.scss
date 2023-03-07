@@ -11,6 +11,8 @@
 }
 
 .technologyItem {
+    width: 60px;
+    height: 60px;
     padding: 8px;
     @media (hover: hover) and (pointer: fine) {
         &:hover {
