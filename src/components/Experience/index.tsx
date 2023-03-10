@@ -72,15 +72,12 @@ function Experience() {
                 </div>
 
                 <div className={styles.rightBlock}>
-
-                  <div>
-                    <div className={styles.responsibilityList}>
-                      {responsibilities.map((responsibility) => (
-                        <li key={responsibility}>
-                          {responsibility}
-                        </li>
-                      ))}
-                    </div>
+                  <div className={styles.responsibilityList}>
+                    {responsibilities.map((responsibility) => (
+                      <li key={responsibility}>
+                        {responsibility}
+                      </li>
+                    ))}
                   </div>
                 </div>
               </div>
