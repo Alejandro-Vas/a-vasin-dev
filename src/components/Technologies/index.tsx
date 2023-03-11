@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ANCHORS } from '@constants/index';
-import technologiesList from './technologiesList';
+import technologiesList from '../../constants/technologiesList';
 import styles from './styles.module.scss';
 
 const initState = technologiesList[4];

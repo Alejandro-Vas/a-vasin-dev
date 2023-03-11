@@ -1,3 +1,7 @@
+import EMPLOYERS from './employers';
+import TECHNOLOGIES_LIST from './technologiesList';
+import PROJECTS from './projects';
+
 const ANCHORS = {
   PROJECTS: 'PROJECTS',
   TECHNOLOGIES: 'TECHNOLOGIES',
@@ -25,4 +29,7 @@ export {
   ANCHORS,
   Y_OFFSET,
   MENU_ITEMS,
+  EMPLOYERS,
+  TECHNOLOGIES_LIST,
+  PROJECTS,
 };

@@ -20,7 +20,7 @@ import typescript from '@assets/icons/technologies/typescript.svg';
 import vscode from '@assets/icons/technologies/vscode.svg';
 import vueJs from '@assets/icons/technologies/vuejs.svg';
 
-const technologyList = [
+const TECHNOLOGIES_LIST = [
   {
     label: 'HTML5',
     Icon: html5,
@@ -119,4 +119,4 @@ const technologyList = [
   },
 ];
 
-export default technologyList;
+export default TECHNOLOGIES_LIST;
