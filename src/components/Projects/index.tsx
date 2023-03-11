@@ -1,16 +1,13 @@
 'use client';
 
 import { ANCHORS } from '@constants/index';
-import Carousel from 'nuka-carousel';
-import Button from '@components/Button';
 
-import GithubIcon from '@assets/icons/technologies/github.svg';
 import newsApp from '@assets/images/projects/newsApp.png';
 import personalSite from '@assets/images/projects/personalSite.png';
 import jsonViewer from '@assets/images/projects/jsonViewer.png';
-import Image from 'next/image';
-import styles from './styles.module.scss';
+
 import Accordion from '../Accordion/index';
+import ProjectItem from './ProjectItem/index';
 
 const projects = [
   {
@@ -49,54 +46,10 @@ function Projects() {
 
       <div className="paper">
         <Accordion />
-        {/* <Carousel
-          defaultControlsConfig={{
-            prevButtonText: '<',
-            nextButtonText: '>',
-            pagingDotsStyle: {
-              padding: '4px',
-            },
-          }}
-        >
-          {projects.map(({
-            title, demoUrl, sourceCode, technologies, image,
-          }) => (
-            <div className={styles.container} key={title}>
-              <div className={styles.text}>
-                <div>
-                  <h2>
-                    {title}
-                  </h2>
-                </div>
 
-                <div>
-                  {technologies}
-                </div>
-
-                <div className={styles.links}>
-                  <Button>
-                    <a href={demoUrl} target="_blank" rel="noreferrer">
-                      DEMO
-                    </a>
-                  </Button>
-
-                  <div className={styles.githubIcon}>
-                    <a href={sourceCode} target="_blank" rel="noreferrer">
-                      <GithubIcon />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <Image
-                src={image}
-                alt="Project preview"
-                height={300}
-                placeholder="blur"
-              />
-            </div>
-          ))}
-        </Carousel> */}
+        {projects.map((project) => (
+          <ProjectItem project={project} key={project.title} />
+        ))}
       </div>
     </div>
   );
