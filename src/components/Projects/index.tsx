@@ -10,6 +10,7 @@ import personalSite from '@assets/images/projects/personalSite.png';
 import jsonViewer from '@assets/images/projects/jsonViewer.png';
 import Image from 'next/image';
 import styles from './styles.module.scss';
+import Accordion from '../Accordion/index';
 
 const projects = [
   {
@@ -47,7 +48,8 @@ function Projects() {
       </h2>
 
       <div className="paper">
-        <Carousel
+        <Accordion />
+        {/* <Carousel
           defaultControlsConfig={{
             prevButtonText: '<',
             nextButtonText: '>',
@@ -94,7 +96,7 @@ function Projects() {
               />
             </div>
           ))}
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   );
