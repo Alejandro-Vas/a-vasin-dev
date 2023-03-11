@@ -1,11 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { ANCHORS } from '@constants/index';
-import technologiesList from '../../constants/technologiesList';
+import { TECHNOLOGY_LIST, ANCHORS } from '@constants/index';
 import styles from './styles.module.scss';
 
-const initState = technologiesList[4];
+const initState = TECHNOLOGY_LIST[4];
 
 function Technologies() {
   const [active, setActive] = useState({
@@ -25,7 +24,7 @@ function Technologies() {
       </h2>
       <div className="paper">
         <div className={styles.technologyList}>
-          {technologiesList.map(({ label, Icon, description = 'No description' }) => {
+          {TECHNOLOGY_LIST.map(({ label, Icon, description = 'No description' }) => {
             const isActiveSelected = active.label === label;
             const selectedClassName = isActiveSelected ? styles.selected : '';
             return (

@@ -1,5 +1,5 @@
 import EMPLOYERS from './employers';
-import TECHNOLOGIES_LIST from './technologiesList';
+import TECHNOLOGY_LIST from './technologyList';
 import PROJECTS from './projects';
 
 const ANCHORS = {
@@ -30,6 +30,6 @@ export {
   Y_OFFSET,
   MENU_ITEMS,
   EMPLOYERS,
-  TECHNOLOGIES_LIST,
+  TECHNOLOGY_LIST,
   PROJECTS,
 };
