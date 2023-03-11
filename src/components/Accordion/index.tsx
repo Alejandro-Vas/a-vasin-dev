@@ -2,19 +2,22 @@ import { useState } from 'react';
 import { faqs } from './data';
 import AccordionItem from './AccordionItem';
 
+import styles from './styles.module.scss';
+
 function Accordion() {
-  const [clicked, setClicked] = useState(0);
+  const [clicked, setClicked] = useState<number | null>(null);
 
   const handleToggle = (index:number) => {
     if (clicked === index) {
-      return setClicked(0);
+      return setClicked(null);
     }
-    setClicked(index);
-    return null;
+    return setClicked(index);
   };
 
+  console.log(clicked);
+
   return (
-    <ul className="accordion">
+    <ul className={styles.accordion}>
       {faqs.map((faq, index) => (
         <AccordionItem
           onToggle={() => handleToggle(index)}
