@@ -6,7 +6,7 @@ import styles from '../styles.module.scss';
 interface IAccordionItem {
   onToggle: () => void;
   active: boolean;
-  project:IProjectEntity;
+  project: IProjectEntity;
 }
 
 function AccordionItem({ project, active, onToggle }: IAccordionItem) {
@@ -26,14 +26,14 @@ function AccordionItem({ project, active, onToggle }: IAccordionItem) {
 
       <div
         ref={contentEl}
-        className={styles.answerWrapper}
+        className={styles.contentWrapper}
         style={
           active
             ? { height: contentEl.current?.scrollHeight }
             : { height: '0px' }
         }
       >
-        <div className={styles.answer}>
+        <div className={styles.content}>
           <ProjectItem project={project} />
         </div>
       </div>
