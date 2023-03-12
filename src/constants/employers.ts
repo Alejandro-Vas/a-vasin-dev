@@ -7,7 +7,7 @@ const EMPLOYERS = [
     Icon: carprice,
     position: 'Frontend developer',
     responsibilities: [
-      'App development using JavaScript, TypeScript, React, Redux, NextJS.',
+      'App development using JavaScript, TypeScript, React, Redux, NextJS',
       'UI-kit and internal packages support',
       'Discussion of API implementation with backend developers',
       'Code-Review',
