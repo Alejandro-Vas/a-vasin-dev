@@ -1,8 +1,12 @@
 .container {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (width <= 600px) {
+        gap: 20px;
+        justify-content: center;
+    }
 }
 
 .text {
@@ -14,6 +18,7 @@
 .githubIcon {
     width: 32px;
     height: 32px;
+
     &:hover {
         opacity: 0.7;
         transition: 0.3s;
