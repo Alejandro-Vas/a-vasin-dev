@@ -3,6 +3,7 @@ import TECHNOLOGY_LIST from './technologyList';
 import PROJECTS from './projects';
 
 const ANCHORS = {
+  TOP: 'TOP',
   PROJECTS: 'PROJECTS',
   TECHNOLOGIES: 'TECHNOLOGIES',
   EXPERIENCE: 'EXPERIENCE',

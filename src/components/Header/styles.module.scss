@@ -15,7 +15,12 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid;
-    padding: 16px 0 16px 0
+    padding: 8px 0 8px 0
+}
+
+.icon,
+.navItem {
+    cursor: pointer
 }
 
 .navContainer {

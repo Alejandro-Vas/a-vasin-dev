@@ -14,8 +14,6 @@ function Accordion() {
     return setClicked(index);
   };
 
-  console.log(clicked);
-
   return (
     <ul className={styles.accordion}>
       {faqs.map((faq, index) => (

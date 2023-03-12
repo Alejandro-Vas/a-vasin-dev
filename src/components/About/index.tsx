@@ -1,9 +1,10 @@
+import { ANCHORS } from '@constants/index';
 import styles from './styles.module.scss';
 
 function About() {
   return (
     <div>
-      <div className={styles.mainInfo}>
+      <div className={styles.mainInfo} id={ANCHORS.TOP}>
         <h1> Aleksandr Vasin</h1>
         <h2>Frontend developer</h2>
       </div>
