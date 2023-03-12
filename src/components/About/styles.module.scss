@@ -1,3 +1,21 @@
 .mainInfo {
     margin-bottom: 16px;
+    & > div {
+        margin-bottom: 16px
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.linkItem {
+    width: 32px;
+    height: 32px;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
 }

@@ -1,6 +1,7 @@
 import EMPLOYERS from './employers';
 import TECHNOLOGY_LIST from './technologyList';
 import PROJECTS from './projects';
+import SOCIAL_LINKS from './socialLinks';
 
 const ANCHORS = {
   TOP: 'TOP',
@@ -33,4 +34,5 @@ export {
   EMPLOYERS,
   TECHNOLOGY_LIST,
   PROJECTS,
+  SOCIAL_LINKS,
 };
