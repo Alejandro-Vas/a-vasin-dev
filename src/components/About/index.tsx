@@ -6,6 +6,7 @@ function About() {
     <div className={styles.mainInfo}>
       <div>
         <h1> Aleksandr Vasin</h1>
+
         <h2>Frontend developer</h2>
       </div>
 
