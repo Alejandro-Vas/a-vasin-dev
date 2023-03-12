@@ -2,18 +2,12 @@
 
 import Button from '@components/Button';
 import GithubIcon from '@assets/icons/technologies/github.svg';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
+import { IProjectEntity } from '@models/index';
 import styles from './styles.module.scss';
 
-interface IProject {
-    project: {
-        title: string;
-        image: StaticImageData;
-        description: string;
-        technologies: string;
-        sourceCode: string;
-        demoUrl: string;
-    }
+export interface IProject {
+    project: IProjectEntity
 }
 
 function ProjectItem({ project }: IProject) {

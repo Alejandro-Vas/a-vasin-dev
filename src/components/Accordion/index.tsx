@@ -1,27 +1,27 @@
 import { useState } from 'react';
-import { faqs } from './data';
+import PROJECTS from '@constants/projects';
 import AccordionItem from './AccordionItem';
 
 import styles from './styles.module.scss';
 
 function Accordion() {
-  const [clicked, setClicked] = useState<number | null>(null);
+  const [clicked, setClicked] = useState<string | null>(null);
 
-  const handleToggle = (index:number) => {
-    if (clicked === index) {
+  const handleToggle = (title:string) => {
+    if (clicked === title) {
       return setClicked(null);
     }
-    return setClicked(index);
+    return setClicked(title);
   };
 
   return (
     <ul className={styles.accordion}>
-      {faqs.map((faq, index) => (
+      {PROJECTS.map((project) => (
         <AccordionItem
-          onToggle={() => handleToggle(index)}
-          active={clicked === index}
-          key={index}
-          faq={faq}
+          onToggle={() => handleToggle(project.title)}
+          active={clicked === project.title}
+          key={project.title}
+          project={project}
         />
       ))}
     </ul>

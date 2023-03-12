@@ -1,8 +1,7 @@
 'use client';
 
-import { ANCHORS, PROJECTS } from '@constants/index';
+import { ANCHORS } from '@constants/index';
 import Accordion from '../Accordion/index';
-import ProjectItem from './ProjectItem/index';
 
 function Projects() {
   return (
@@ -14,10 +13,6 @@ function Projects() {
 
       <div className="paper">
         <Accordion />
-
-        {PROJECTS.map((project) => (
-          <ProjectItem project={project} key={project.title} />
-        ))}
       </div>
     </div>
   );
