@@ -15,7 +15,7 @@ const EMPLOYERS = [
       'Refactoring',
       'Deploy configuration',
     ],
-    dateFrom: 'March 2022',
+    dateFrom: 'February 2022',
     dateTo: 'Until now',
   },
   {
@@ -27,7 +27,7 @@ const EMPLOYERS = [
       'Analytics and calculation of the value of the bank\'s balance sheet assets',
     ],
     dateFrom: 'July 2010',
-    dateTo: 'March 2022',
+    dateTo: 'February 2022',
   },
 ];
 
