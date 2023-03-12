@@ -13,5 +13,5 @@ export interface IProjectEntity {
 export interface ITechnologyEntity {
     label: string;
     Icon: ComponentType;
-    description?: string
+    description: string
 }
