@@ -3,41 +3,33 @@
 import { useState } from 'react';
 import { TECHNOLOGY_LIST, ANCHORS } from '@constants/index';
 import styles from './styles.module.scss';
+import TechnologyItem from './TechnologyItem';
 
 const initState = TECHNOLOGY_LIST[4];
 
 function Technologies() {
-  const [active, setActive] = useState({
-    label: initState.label,
-    description: initState.description,
-  });
-
-  const onSelect = (selected: { label :string, description: string }) => {
-    setActive(selected);
-  };
+  const [active, setActive] = useState(initState);
 
   return (
     <div>
       <span id={ANCHORS.TECHNOLOGIES} />
+
       <h2 className="textAlignCenter">
         TECHNOLOGIES
       </h2>
+
       <div className="paper">
         <div className={styles.technologyList}>
-          {TECHNOLOGY_LIST.map(({ label, Icon, description = 'No description' }) => {
-            const isActiveSelected = active.label === label;
-            const selectedClassName = isActiveSelected ? styles.selected : '';
+          {TECHNOLOGY_LIST.map((technology) => {
+            const isActiveSelected = active.label === technology.label;
+
             return (
-              <div
-                key={label}
-                className={`${styles.technologyItem} ${selectedClassName}`}
-                onClick={() => onSelect({ label, description })}
-                tabIndex={-1}
-                role="button"
-                onKeyDown={() => null}
-              >
-                <Icon />
-              </div>
+              <TechnologyItem
+                technology={technology}
+                isActiveSelected={isActiveSelected}
+                key={technology.label}
+                setActive={setActive}
+              />
             );
           })}
         </div>
@@ -49,7 +41,7 @@ function Technologies() {
         </div>
 
         <div className={styles.description}>
-          {active.description}
+          {active.description || 'No description'}
         </div>
 
       </div>

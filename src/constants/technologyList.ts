@@ -24,32 +24,32 @@ const TECHNOLOGY_LIST = [
   {
     label: 'HTML5',
     Icon: html5,
-    description: 'HTML5 is a markup language used for structuring and presenting content on the World Wide Web',
+    description: 'Markup language used for structuring and presenting content on the World Wide Web',
   },
   {
     label: 'CSS',
     Icon: css3,
-    description: 'CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts',
+    description: 'Language for describing the presentation of Web pages, including colors, layout, and fonts',
   },
   {
     label: 'JavaScript',
     Icon: javascript,
-    description: 'JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard',
+    description: 'High-level, often just-in-time compiled language that conforms to the ECMAScript standard',
   },
   {
     label: 'TypeScript',
     Icon: typescript,
-    description: 'TypeScript (TS) is a strictly-typed variant of JavaScript. TS differs by introducing type annotations to variables and functions',
+    description: 'Strictly-typed variant of JavaScript. TS differs by introducing type annotations to variables and functions',
   },
   {
     label: 'React',
     Icon: react,
-    description: 'React is JavaScript library for building user interfaces based on components.',
+    description: 'JavaScript library for building user interfaces based on components.',
   },
   {
     label: 'Vue.js',
     Icon: vueJs,
-    description: 'Vue is a progressive JavaScript Framework web user interfaces.',
+    description: 'Progressive JavaScript Framework web user interfaces.',
   },
   {
     label: 'Redux',
@@ -69,44 +69,52 @@ const TECHNOLOGY_LIST = [
   {
     label: 'Express',
     Icon: express,
+    description: 'A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications',
   },
   {
     label: 'NPM',
     Icon: npm,
+    description: 'NPM stands for Node Package Manager and is one of the multiple package managers (others include Yarn, Bower, etc.)',
   },
   {
     label: 'Material UI',
     Icon: materialUI,
+    description: 'React component library that implements Google\'s Material Design. It includes a comprehensive collection of prebuilt components',
   },
   {
     label: 'TailwindCSS',
     Icon: tailwindCSS,
+    description: 'Utility-first CSS framework designed to enable users to create applications faster and easier',
   },
   {
     label: 'Bootstrap',
     Icon: bootstrap,
-    description: 'Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins',
+    description: 'CSS Framework for developing responsive and mobile-first websites',
   },
   {
     label: 'Docker',
     Icon: docker,
-    description: 'Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly',
+    description: 'Docker is an open platform for developing, shipping, and running applications',
   },
   {
     label: 'Git',
     Icon: git,
+    description: 'A free and open source distributed version control system used to handle projects efficiently',
   },
   {
     label: 'Gitlab',
     Icon: gitlab,
+    description: 'Web-based Git repository that provides free open and private repositories, issue-following capabilities, and wikis',
   },
   {
     label: 'Jest',
     Icon: jest,
+    description: 'JavaScript testing framework designed to ensure correctness of any JavaScript codebase',
   },
   {
     label: 'Kubernetes',
     Icon: kubernetes,
+    description: 'Open-source system for automating deployment, scaling, and management of containerized applications',
   },
   {
     label: 'ArgoCD',
@@ -116,6 +124,7 @@ const TECHNOLOGY_LIST = [
   {
     label: 'VsCode',
     Icon: vscode,
+    description: 'Code editor redefined and optimized for building and debugging modern web and cloud applications',
   },
 ];
 

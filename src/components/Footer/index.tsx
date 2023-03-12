@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        Footer!
+        © 2021-2023 Aleksandr Vasin
       </div>
     </footer>
   );
