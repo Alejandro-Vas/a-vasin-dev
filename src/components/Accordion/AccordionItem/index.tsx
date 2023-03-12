@@ -13,7 +13,6 @@ interface IAccordionItem {
 
 function AccordionItem({ project, active, onToggle }: IAccordionItem) {
   const contentEl = useRef<HTMLDivElement | null>(null);
-  console.log('render');
 
   return (
     <li className={`${styles.accordionItem} ${active ? styles.active : ''}`}>
