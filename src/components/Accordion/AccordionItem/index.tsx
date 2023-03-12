@@ -1,27 +1,30 @@
 import ProjectItem from '@components/Projects/ProjectItem';
-import { useRef } from 'react';
+import { memo, useRef } from 'react';
 import { IProjectEntity } from '@models/index';
+import MinusIcon from '@assets/icons/ui/minus.svg';
+import PlusIcon from '@assets/icons/ui/plus.svg';
 import styles from '../styles.module.scss';
 
 interface IAccordionItem {
-  onToggle: () => void;
+  onToggle: (arg: string) => void | typeof arg
   active: boolean;
   project: IProjectEntity;
 }
 
 function AccordionItem({ project, active, onToggle }: IAccordionItem) {
   const contentEl = useRef<HTMLDivElement | null>(null);
+  console.log('render');
 
   return (
     <li className={`${styles.accordionItem} ${active ? styles.active : ''}`}>
-      <button type="button" className={styles.button} onClick={onToggle}>
+      <button
+        type="button"
+        className={styles.button}
+        onClick={() => onToggle(project.title)}
+      >
         {project.title}
 
-        <span className={styles.control}>
-          {active ? '—' : '+'}
-
-          {' '}
-        </span>
+        {active ? <MinusIcon /> : <PlusIcon />}
       </button>
 
       <div
@@ -41,4 +44,4 @@ function AccordionItem({ project, active, onToggle }: IAccordionItem) {
   );
 }
 
-export default AccordionItem;
+export default memo(AccordionItem);
