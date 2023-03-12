@@ -1,6 +1,7 @@
 'use client';
 
-import { Y_OFFSET, MENU_ITEMS } from '@constants/index';
+import { Y_OFFSET, MENU_ITEMS, ANCHORS } from '@constants/index';
+import Logo from '@assets/icons/logo.svg';
 import styles from './styles.module.scss';
 
 function Header() {
@@ -16,11 +17,17 @@ function Header() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        Header!
+
+        <Logo
+          onClick={() => scrollSmoothTo(ANCHORS.TOP)}
+          className={styles.icon}
+        />
+
         <div>
           <div className={styles.navContainer}>
             {MENU_ITEMS.map(({ label, anchor }) => (
               <div
+                className={styles.navItem}
                 role="button"
                 onClick={() => scrollSmoothTo(anchor)}
                 key={label}
@@ -31,7 +38,6 @@ function Header() {
                 {label}
               </div>
             ))}
-
           </div>
         </div>
       </header>

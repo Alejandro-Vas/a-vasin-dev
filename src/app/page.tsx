@@ -3,11 +3,13 @@ import Experience from '@components/Experience';
 import Projects from '@components/Projects';
 import Technologies from '@components/Technologies';
 
+import { ANCHORS } from '@constants/index';
+
 import styles from './styles.module.scss';
 
 function App() {
   return (
-    <main className="container">
+    <main className="container" id={ANCHORS.TOP}>
       <div className={styles.contentWrapper}>
         <About />
 

@@ -1,0 +1,36 @@
+  .accordion {
+      list-style: none;
+  }
+
+  .accordionItem {
+      border-top: 1px solid #9f9f9f;
+  }
+
+  .button {
+      font-size: 16px;
+      color: #fff;
+      text-align: left;
+      font-weight: 700;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8px;
+      cursor: pointer;
+      border: none;
+  }
+
+  .control {
+      font-size: 20px;
+  }
+
+  .content {
+      padding: 20px;
+  }
+
+  .contentWrapper {
+      height: 0;
+      overflow: hidden;
+      transition: height ease 0.5s;
+  }
