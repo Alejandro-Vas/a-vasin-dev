@@ -17,7 +17,6 @@ function Header() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-
         <Logo
           onClick={() => scrollSmoothTo(ANCHORS.TOP)}
           className={styles.icon}
