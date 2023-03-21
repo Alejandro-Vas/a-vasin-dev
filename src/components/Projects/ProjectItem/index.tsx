@@ -36,7 +36,7 @@ function ProjectItem({ project }: IProject) {
         <div className={styles.links}>
           <Button>
             <a href={url} target="_blank" rel="noreferrer">
-              DEPLOY
+              OPEN
             </a>
           </Button>
 
@@ -50,12 +50,16 @@ function ProjectItem({ project }: IProject) {
         </div>
       </div>
 
-      <Image
-        src={image}
-        alt="Project preview"
-        height={300}
-        placeholder="blur"
-      />
+      <div className={styles.imageContainer}>
+        <Image
+          src={image}
+          alt="Project preview"
+          className={styles.image}
+          placeholder="blur"
+          width={0}
+          height={0}
+        />
+      </div>
     </div>
   );
 }
