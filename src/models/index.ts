@@ -3,11 +3,12 @@ import { ComponentType } from 'react';
 
 export interface IProjectEntity {
     title: string;
+    isOpenSource?: boolean
     image: StaticImageData;
     description: string;
     technologies: string;
-    sourceCode: string;
-    demoUrl: string;
+    sourceCode?: string;
+    url: string;
 }
 
 export interface ITechnologyEntity {

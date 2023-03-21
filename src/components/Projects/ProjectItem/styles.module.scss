@@ -5,7 +5,6 @@
 
     @media (max-width: 600px) {
         gap: 20px;
-        justify-content: center;
     }
 }
 
@@ -16,7 +15,7 @@
     margin-bottom: 12px;
 }
 
-.githubIcon {
+.openSource {
     width: 32px;
     height: 32px;
 
@@ -24,6 +23,11 @@
         opacity: 0.7;
         transition: 0.3s;
     }
+}
+
+.commercial {
+    width: 32px;
+    height: 32px;
 }
 
 .links {

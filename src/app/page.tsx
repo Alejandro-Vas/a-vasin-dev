@@ -5,6 +5,8 @@ import Technologies from '@components/Technologies';
 
 import { ANCHORS } from '@constants/index';
 
+import { COMMERCIAL_PROJECTS, OPEN_SOURCE_PROJECTS } from '@constants/projects';
+
 import styles from './styles.module.scss';
 
 function App() {
@@ -17,11 +19,17 @@ function App() {
 
         <Experience />
 
-        {/* <Projects type="PROJECTS" anchor={ANCHORS.PROJECTS} /> */}
+        <Projects
+          type="COMMERCIAL PROJECTS"
+          anchor={ANCHORS.PROJECTS}
+          projects={COMMERCIAL_PROJECTS}
+        />
 
-        <Projects type="PERSONAL PROJECTS" />
+        <Projects
+          type="OPEN SOURCE PROJECTS"
+          projects={OPEN_SOURCE_PROJECTS}
+        />
       </div>
-
     </main>
   );
 }

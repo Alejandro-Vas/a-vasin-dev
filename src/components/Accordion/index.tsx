@@ -1,10 +1,14 @@
 import { useState, useCallback } from 'react';
-import PROJECTS from '@constants/projects';
+import { IProjectEntity } from '@models/index';
 import AccordionItem from './AccordionItem';
 
 import styles from './styles.module.scss';
 
-function Accordion() {
+interface IAccordion {
+ projects: IProjectEntity[];
+}
+
+function Accordion({ projects }:IAccordion) {
   const [clicked, setClicked] = useState<string | null>(null);
 
   const onToggle = useCallback(
@@ -17,7 +21,7 @@ function Accordion() {
 
   return (
     <ul className={styles.accordion}>
-      {PROJECTS.map((project) => (
+      {projects.map((project) => (
         <AccordionItem
           onToggle={onToggle}
           active={clicked === project.title}
