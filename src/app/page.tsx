@@ -17,7 +17,9 @@ function App() {
 
         <Experience />
 
-        <Projects />
+        {/* <Projects type="PROJECTS" anchor={ANCHORS.PROJECTS} /> */}
+
+        <Projects type="PERSONAL PROJECTS" />
       </div>
 
     </main>

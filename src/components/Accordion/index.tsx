@@ -7,12 +7,13 @@ import styles from './styles.module.scss';
 function Accordion() {
   const [clicked, setClicked] = useState<string | null>(null);
 
-  const onToggle = useCallback((title:string) => {
-    if (clicked === title) {
-      return setClicked(null);
-    }
-    return setClicked(title);
-  }, [clicked]);
+  const onToggle = useCallback(
+    (title:string) => (
+      clicked === title
+        ? setClicked(null)
+        : setClicked(title)),
+    [clicked],
+  );
 
   return (
     <ul className={styles.accordion}>

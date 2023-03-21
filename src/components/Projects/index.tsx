@@ -1,14 +1,19 @@
 'use client';
 
-import { ANCHORS } from '@constants/index';
 import Accordion from '../Accordion/index';
 
-function Projects() {
+interface IProjects {
+  type: string
+  anchor?: string
+}
+
+function Projects({ type, anchor }:IProjects) {
   return (
     <div>
-      <span id={ANCHORS.PROJECTS} />
+      {anchor && <span id={anchor} />}
+
       <h2 className="textAlignCenter">
-        PROJECTS
+        {type}
       </h2>
 
       <div className="paper">
