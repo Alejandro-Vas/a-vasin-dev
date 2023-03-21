@@ -54,7 +54,7 @@ const TECHNOLOGY_LIST = [
   {
     label: 'Redux',
     Icon: redux,
-    description: 'A Predictable State Container for JS Apps and toolset for efficient Redux development',
+    description: 'A Predictable State Container for JS Apps and tool for efficient Redux development',
   },
   {
     label: 'Next.js',

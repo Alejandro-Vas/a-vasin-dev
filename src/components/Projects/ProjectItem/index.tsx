@@ -31,7 +31,7 @@ function ProjectItem({ project }: IProject) {
         <div className={styles.links}>
           <Button>
             <a href={demoUrl} target="_blank" rel="noreferrer">
-              DEMO
+              DEPLOY
             </a>
           </Button>
 
