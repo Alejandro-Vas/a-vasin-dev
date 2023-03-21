@@ -24,7 +24,7 @@
     min-width: 520px;
     height: 100%;
 
-    @media (width <= 600px) {
+    @media (max-width: 600px) {
         min-width: auto
     }
 }
