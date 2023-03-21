@@ -19,10 +19,14 @@ function ProjectItem({ project }: IProject) {
   return (
     <div className={styles.container} key={title}>
       <div className={styles.text}>
-        <div>
+        <div className={styles.links}>
           <h2>
             {title}
           </h2>
+
+          <div className={styles.icon}>
+            {isOpenSource ? <GithubIcon /> : <GitLabIcon />}
+          </div>
         </div>
 
         <div>
@@ -43,20 +47,6 @@ function ProjectItem({ project }: IProject) {
               </a>
             </Button>
           )}
-
-          {isOpenSource
-            ? (
-              <div className={styles.openSource}>
-                <a href={sourceCode} target="_blank" rel="noreferrer">
-                  <GithubIcon />
-                </a>
-              </div>
-            )
-            : (
-              <div className={styles.commercial}>
-                <GitLabIcon />
-              </div>
-            )}
         </div>
       </div>
 
