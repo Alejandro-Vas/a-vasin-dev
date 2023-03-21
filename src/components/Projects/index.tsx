@@ -1,13 +1,15 @@
 'use client';
 
-import Accordion from '../Accordion/index';
+import { IProjectEntity } from '@models/index';
+import Accordion from '@components/Accordion/index';
 
 interface IProjects {
   type: string
   anchor?: string
+  projects: IProjectEntity[]
 }
 
-function Projects({ type, anchor }:IProjects) {
+function Projects({ type, anchor, projects }:IProjects) {
   return (
     <div>
       {anchor && <span id={anchor} />}
@@ -17,7 +19,7 @@ function Projects({ type, anchor }:IProjects) {
       </h2>
 
       <div className="paper">
-        <Accordion />
+        <Accordion projects={projects} />
       </div>
     </div>
   );

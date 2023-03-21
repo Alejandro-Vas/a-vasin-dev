@@ -2,6 +2,7 @@
 
 import Button from '@components/Button';
 import GithubIcon from '@assets/icons/technologies/github.svg';
+import GitLabIcon from '@assets/icons/technologies/gitlab.svg';
 import Image from 'next/image';
 import { IProjectEntity } from '@models/index';
 import styles from './styles.module.scss';
@@ -12,16 +13,20 @@ export interface IProject {
 
 function ProjectItem({ project }: IProject) {
   const {
-    title, demoUrl, sourceCode, technologies, image,
+    title, url, sourceCode, technologies, image, isOpenSource,
   } = project;
 
   return (
     <div className={styles.container} key={title}>
       <div className={styles.text}>
-        <div>
+        <div className={styles.links}>
           <h2>
             {title}
           </h2>
+
+          <div className={styles.icon}>
+            {isOpenSource ? <GithubIcon /> : <GitLabIcon />}
+          </div>
         </div>
 
         <div>
@@ -30,16 +35,18 @@ function ProjectItem({ project }: IProject) {
 
         <div className={styles.links}>
           <Button>
-            <a href={demoUrl} target="_blank" rel="noreferrer">
+            <a href={url} target="_blank" rel="noreferrer">
               DEPLOY
             </a>
           </Button>
 
-          <div className={styles.githubIcon}>
-            <a href={sourceCode} target="_blank" rel="noreferrer">
-              <GithubIcon />
-            </a>
-          </div>
+          {isOpenSource && (
+            <Button>
+              <a href={sourceCode} target="_blank" rel="noreferrer">
+                CODE
+              </a>
+            </Button>
+          )}
         </div>
       </div>
 

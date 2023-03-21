@@ -1,6 +1,6 @@
 import EMPLOYERS from './employers';
 import TECHNOLOGY_LIST from './technologyList';
-import PROJECTS from './projects';
+import { OPEN_SOURCE_PROJECTS, COMMERCIAL_PROJECTS } from './projects';
 import SOCIAL_LINKS from './socialLinks';
 
 const ANCHORS = {
@@ -33,6 +33,7 @@ export {
   MENU_ITEMS,
   EMPLOYERS,
   TECHNOLOGY_LIST,
-  PROJECTS,
+  OPEN_SOURCE_PROJECTS,
+  COMMERCIAL_PROJECTS,
   SOCIAL_LINKS,
 };

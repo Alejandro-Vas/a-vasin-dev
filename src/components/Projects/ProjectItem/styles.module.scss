@@ -5,7 +5,6 @@
 
     @media (max-width: 600px) {
         gap: 20px;
-        justify-content: center;
     }
 }
 
@@ -16,14 +15,9 @@
     margin-bottom: 12px;
 }
 
-.githubIcon {
+.icon {
     width: 32px;
     height: 32px;
-
-    &:hover {
-        opacity: 0.7;
-        transition: 0.3s;
-    }
 }
 
 .links {
