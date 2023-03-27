@@ -17,7 +17,7 @@ function MotionWrapper({ children, direction = 'bottom', delay = 0 }: IMotionWra
   return (
     <motion.div
       animate={{ y, opacity: [0, 1] }}
-      transition={{ delay, duration: 2, ease: 'easeInOut' }}
+      transition={{ delay, duration: 1, ease: 'easeInOut' }}
       initial={{ opacity: 0 }}
     >
       {children}
