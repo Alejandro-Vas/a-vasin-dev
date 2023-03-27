@@ -1,11 +1,11 @@
 'use client';
 
 import Button from '@components/Button';
-import GithubIcon from '@assets/icons/technologies/github.svg';
+import GitHubIcon from '@assets/icons/technologies/github.svg';
 import GitLabIcon from '@assets/icons/technologies/gitlab.svg';
 import Image from 'next/image';
 import { IProjectEntity } from '@models/index';
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import Modal from '@components/Modal';
 import styles from './styles.module.scss';
 
@@ -40,7 +40,7 @@ function ProjectItem({ project }: IProject) {
             </h2>
 
             <div className={styles.icon}>
-              {isOpenSource ? <GithubIcon /> : <GitLabIcon />}
+              {isOpenSource ? <GitHubIcon /> : <GitLabIcon />}
             </div>
           </div>
 
@@ -81,4 +81,4 @@ function ProjectItem({ project }: IProject) {
   );
 }
 
-export default ProjectItem;
+export default memo(ProjectItem);
