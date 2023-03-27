@@ -16,19 +16,17 @@ function App() {
   return (
     <main className="container" id={ANCHORS.TOP}>
       <div className={styles.contentWrapper}>
-        <MotionWrapper>
-          <About />
-        </MotionWrapper>
+        <About />
 
-        <MotionWrapper direction="right">
+        <MotionWrapper>
           <Technologies />
         </MotionWrapper>
 
-        <MotionWrapper delay={2}>
+        <MotionWrapper>
           <Experience />
         </MotionWrapper>
 
-        <MotionWrapper direction="right" delay={2}>
+        <MotionWrapper delay={2}>
           <Projects
             type="COMMERCIAL PROJECTS"
             anchor={ANCHORS.PROJECTS}
@@ -36,7 +34,7 @@ function App() {
           />
         </MotionWrapper>
 
-        <MotionWrapper delay={2}>
+        <MotionWrapper delay={3}>
           <Projects
             type="OPEN SOURCE PROJECTS"
             projects={OPEN_SOURCE_PROJECTS}

@@ -3,20 +3,20 @@ import React, { ReactElement } from 'react';
 
 interface IMotionWrapper {
     children: ReactElement
-    direction?: 'left' | 'right'
+    direction?: 'top' | 'bottom'
     delay?: number
 }
 
 const coordinates = {
-  left: -200,
-  right: 200,
+  top: -200,
+  bottom: 200,
 };
 
-function MotionWrapper({ children, direction = 'left', delay = 0 }: IMotionWrapper) {
-  const x = [coordinates[direction], 0];
+function MotionWrapper({ children, direction = 'bottom', delay = 0 }: IMotionWrapper) {
+  const y = [coordinates[direction], 0];
   return (
     <motion.div
-      animate={{ x, opacity: [0, 1] }}
+      animate={{ y, opacity: [0, 1] }}
       transition={{ delay, duration: 2, ease: 'easeInOut' }}
       initial={{ opacity: 0 }}
     >
