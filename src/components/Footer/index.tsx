@@ -2,7 +2,10 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        © 2021-2023 Aleksandr Vasin
+        © 2021-
+        {new Date().getFullYear()}
+        {' '}
+        Aleksandr Vasin
       </div>
     </footer>
   );
