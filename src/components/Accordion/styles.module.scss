@@ -1,5 +1,5 @@
   .accordion {
-      list-style: none;
+      list-style: none;  
   }
 
   .accordionItem {
@@ -7,15 +7,16 @@
   }
 
   .button {
-      font-size: 16px;
-      text-align: left;
-      font-weight: 700;
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: space-between;
-      align-items: center;
-      padding: 8px 8px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px;
   }
 
   .content {
