@@ -1,4 +1,16 @@
 ### Readme in construction...
 
-### DEMO
-http://a-vasin.online/
+### DEPLOY
+https://a-vasin.online/
+
+### TODO BACKLOG
+- [x] normalize CSS
+- [ ] add colors to variables
+- [ ] modal state to global (useContext or redux)
+- [ ] add keyboard listeners on div
+- [ ] refactor Accordion
+- [ ] check rerenders
+- [ ] add meta, opengraph
+- [ ] configure robots.txt
+- [ ] increase Lighthouse performance
+
