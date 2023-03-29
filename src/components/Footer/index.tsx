@@ -1,11 +1,10 @@
 function Footer() {
+  const date = `© 2021-${new Date().getFullYear()} Aleksandr Vasin`;
+
   return (
     <footer>
       <div className="container">
-        © 2021-
-        {new Date().getFullYear()}
-        {' '}
-        Aleksandr Vasin
+        {date}
       </div>
     </footer>
   );

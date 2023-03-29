@@ -79,7 +79,7 @@ const TECHNOLOGY_LIST = [
   {
     label: 'Material UI',
     Icon: materialUI,
-    description: 'React component library that implements Google\'s Material Design. It includes a comprehensive collection of prebuilt components',
+    description: 'React component library that implements Google\'s Material Design. It includes a collection of prebuilt components',
   },
   {
     label: 'TailwindCSS',
