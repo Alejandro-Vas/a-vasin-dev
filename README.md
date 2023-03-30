@@ -5,8 +5,8 @@ https://a-vasin.online/
 
 ### TODO BACKLOG
 - [x] normalize CSS
+- [x] modal state to useContext
 - [ ] add colors to variables
-- [ ] modal state to global (useContext or redux)
 - [ ] add Husky
 - [ ] add keyboard listeners on div
 - [ ] refactor Accordion

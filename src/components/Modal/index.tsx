@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
-import { useEffect } from 'react';
+import { memo, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import styles from './styles.module.scss';
 
 interface IModal {
@@ -30,19 +31,30 @@ function Modal({ onClose, image }:IModal) {
       onKeyDown={() => null}
     >
       <div className={styles.modalBody}>
-        <div className={styles.imageContainer}>
-          <Image
-            src={image}
-            alt="Project preview"
-            className={styles.image}
-            placeholder="blur"
-            width={0}
-            height={0}
-          />
-        </div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          transition={{ duration: 0.7 }}
+          style={{ width: '100%', height: '100%' }}
+        >
+          <div className={styles.imageContainer}>
+            <Image
+              src={image}
+              alt="Project preview"
+              className={styles.image}
+              placeholder="blur"
+              width={0}
+              height={0}
+            />
+          </div>
+        </motion.div>
       </div>
     </div>
   );
 }
 
-export default Modal;
+export default memo(Modal);

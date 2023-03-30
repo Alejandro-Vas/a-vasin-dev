@@ -1,5 +1,7 @@
 import { StaticImageData } from 'next/image';
-import { ComponentType } from 'react';
+import {
+  ComponentType, Dispatch, SetStateAction,
+} from 'react';
 
 export interface IProjectEntity {
     title: string;
@@ -16,3 +18,10 @@ export interface ITechnologyEntity {
     Icon: ComponentType;
     description: string
 }
+
+export type IModalContext = {
+    isModalOpen: boolean;
+    setIsModalOpen: Dispatch<SetStateAction<boolean>> | (() => void);
+    fullscreenImage: StaticImageData | null
+    setFullscreenImage: Dispatch<SetStateAction<StaticImageData>> | (() => void) ;
+};

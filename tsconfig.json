@@ -51,6 +51,9 @@
       ],
       "@models/*": [
         "src/models/*"
+      ],
+      "@contexts/*": [
+        "src/contexts/*"
       ]
     }
   },
