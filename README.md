@@ -6,6 +6,7 @@ https://a-vasin.online/
 ### TODO BACKLOG
 - [x] normalize CSS
 - [x] modal state to useContext
+- [x] refactor Footer
 - [ ] add colors to variables
 - [ ] add Husky
 - [ ] add keyboard listeners on div
