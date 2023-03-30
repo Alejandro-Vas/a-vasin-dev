@@ -5,6 +5,7 @@ https://a-vasin.online/
 
 ### TODO BACKLOG
 - [x] normalize CSS
+- [x] refactor Footer
 - [ ] add colors to variables
 - [ ] modal state to global (useContext or redux)
 - [ ] add Husky
